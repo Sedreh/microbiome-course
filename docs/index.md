@@ -100,7 +100,7 @@ After sequencing, raw reads were processed using [zAMP](https://rsp4abm.readthed
 
 > **Figure 5: DADA2 workflow**
 
-> ![assembly graph](Img/dada2.png){: width="560px" width:"100%" .center}
+> ![assembly graph](Img/DADA21.png){: width="560px" width:"100%" .center}
 
 </br>
 </br>
