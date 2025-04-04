@@ -4,6 +4,8 @@
 
 ### **Introduction to the study**
 
+The composition of our microbiome is not static; it is shaped by various internal and external factors throughout life, from birth to adulthood. Early influences include genetics, and even birth mode, which help establish a diverse microbiota. As we grow, factors such as diet, exercises continue to modify microbial communities. This study focuses on a life-limiting genetic disease typically diagnosed by age two.
+
 Cystic fibrosis unfolds as a story of resilience against a genetic adversity, where the mutation in the CFTR gene ,that maintains the balance of salt and water across cell membranes,results in an overproduction of thick, sticky mucus that obstructs the lungs and obstruct the pancreas. For patients, this means a struggle to breathe and a battle against frequent lung infections.
 
 > **Figure 1: Mutations in the CFTR gene, thick and sticky mucus production**>![assembly graph](Img/Cystic_fibrosis.png){: width="560px" width:"100%" .center}
@@ -12,15 +14,20 @@ Cystic fibrosis unfolds as a story of resilience against a genetic adversity, wh
 ### **Role of the microbiota**
 
 
-Tracking of the lower respiratory tract microbiota stands as a critical tool in this struggle, offering deep insights into the lung's microbial landscape. Because in CF, the diversity of the microbial community in the lungs can change significantly with different stages of the disease. Normally, a diverse microbiome in the lungs is associated with better respiratory health. However, in CF, the thick mucus creates an environment that allows certain bacteria to flourish while others diminish, leading to a less diverse microbiome.
+Tracking of the lower respiratory tract microbiota stands as a critical tool in this struggle, offering deep insights into the lung's microbial landscape. Because in CF, the diversity of the microbial community in the lungs can change significantly with different stages of the disease. Normally, a diverse microbiome in the lungs is associated with better respiratory health. Healthy lungs contain a diverse and balanced microbiota, mostly dominated by anaerobes and commensal bacteria such as Veillonella, and Prevotella and is like an island whose population is determined by balance of immigration and elimination of species. 
+
+In CF lungs, the thick mucus provides an ideal environment for opportunistic bacteria and pathogens to colonize. As the disease progresses and repeated antibiotic treatments are administered, microbial diversity decreases. In the early stages, Staphylococcus aureus and Haemophilus species are commonly found, but later, colonization by Pseudomonas and the formation of a thick biofilm layer make sputum clearance and treatment significantly more difficult. 
+
+The Climax-Attack Model (CAM) in CF explains the dynamic changes in airway microbiota.
+
 
 > **Figure 2: Microbiome shifts in CF**
 
-> ![assembly graph](Img/CF.png){: width="560px" width:"100%" .center}
+> ![assembly graph](Img/CF_microbiota.png){: width="560px" width:"100%" .center}
 
 </br>
 
-By understanding these microbial profiles and their shift in disease stages, physicians can customize treatments, adjusting antibiotics to stop infections from developing or spreading, keeping an eye on emerging drug resistances, and ultimately enhancing the quality of life for those with cystic fibrosis.
+By understanding these microbial profiles and their shift in disease stages, physicians can customize treatments, adjusting antibiotics to stop infections from developing or spreading, keeping an eye on emerging drug resistances, and ultimately enhancing the quality of life for those with cystic fibrosis. 
 
 </br>
 
