@@ -379,7 +379,22 @@ After sequencing, raw reads were processed using [zAMP](https://rsp4abm.readthed
 </br>
 
 ??? info "**Answer**"
-    The statistical test suggests that in the exacerbation phase, the sample type (sputum vs. throat swab) does not significantly affect the microbial composition within the same visits, with p-values of 0.12 and 0.58 for Bray-Curtis and Jaccard distances respectively. However, the timing of the visit influences bacterial abundance, as indicated by the significant p-value of 0.04 for Bray-Curtis distance, suggesting that factors related to individual visits (such as disease state, treatment, or environmental conditions) may play a more significant role than the type of sample collected.
+    The statistical test suggests that in the exacerbation phase, the sample type (sputum vs. throat swab) does not significantly affect the microbial composition within the same visits, with p-values of 0.12 and 0.58 for Bray-Curtis and Jaccard distances respectively. However, the timing of the visit influences bacterial abundance, as indicated by the significant p-value of 0.04 for Bray-Curtis distance, suggesting that factors related to individual visits (such as disease state, treatment, or environmental conditions) may play a more significant role than the type of sample collected. let's discover this in next question.
+
+
+!!! question "**Question 4**"
+Do sputum and throat swab samples cluster more strongly by sample type or patient identity? What might this indicate about the nature of airway microbiota in children with CF?
+
+
+??? info "**Answer**"
+      Samples clustered by the individuals rather than by the sample type (pairwise PERMANOVA, p = 0.001). This suggests that each patient harbors a unique, individual-specific microbiota in their airways that is more consistent across different sample types (sputum vs. throat swab) than across individuals. This could reflect personal environmental exposure, genetic background, or medical treatment history.
+
+> **Figure 10: Microbial community composition clusters by patient identity rather than sample type**
+>
+> ![assembly graph](Img/patient_signature.png){: width="560px" width:"100%" .center}
+
+</br>
+</br>
 
 
 !!! question "**Question 4**"  
