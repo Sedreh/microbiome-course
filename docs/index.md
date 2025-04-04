@@ -12,7 +12,7 @@ Cystic fibrosis unfolds as a story of resilience against a genetic adversity, wh
 
 > **Figure 1: Mutations in the CFTR gene, thick and sticky mucus production**
 
-> ![assembly graph](Img/Cystic_fibrosis.png){: width="560px" width:"100%" .center}
+> ![assembly graph](Img/Cystic_fibrosis.png){: width:"100%" .center}
 
 </br>
 
@@ -29,7 +29,7 @@ The Climax-Attack Model (CAM) in CF explains the dynamic changes in airway micr
 
 > **Figure 2: Microbiome shifts in CF**
 
-> ![assembly graph](Img/CF_microbiota.png){: width="560px" width:"100%" .center}
+> ![assembly graph](Img/CF_microbiota.png){: width:"100%" .center}
 
 </br>
 
@@ -57,7 +57,7 @@ Evaluating non-invasive respiratory sampling methods for young children in medic
 _"Can throat swabs serve as an effective alternative to sputum for the longitudinal assessment of lung microbial diversity and pathogen identification in patients who cannot expectorate?"_
 
 </br>
-> ![assembly graph](Img/sputum_vs_throat.png){: width="560px" width:"100%" .center}
+> ![assembly graph](Img/sputum_vs_throat.png){: width:"100%" .center}
 
 </br>
 
@@ -75,7 +75,7 @@ Traditional culture techniques have been the cornerstone of microbiological moni
 
 > **Figure 3: Study design and sample collection**
 
-> ![assembly graph](Img/design.png){: width="560px" width:"100%" .center}
+> ![assembly graph](Img/design.png){: width:"100%" .center}
 
 </br>
 
@@ -93,14 +93,14 @@ After sequencing, raw reads were processed using [zAMP](https://rsp4abm.readthed
 
 > **Figure 4: 16S amplicon-based metagenomics workflow**
 
-> ![assembly graph](Img/methods1.png){: width="560px" width:"100%" .center}
+> ![assembly graph](Img/methods1.png){: width:"100%" .center}
 
 </br>
 </br>
 
 > **Figure 5: DADA2 workflow**
 
-> ![assembly graph](Img/DADA21.png){: width="560px" width:"100%" .center}
+> ![assembly graph](Img/DADA21.png){: width:"100%" .center}
 
 </br>
 </br>
@@ -129,7 +129,7 @@ After sequencing, raw reads were processed using [zAMP](https://rsp4abm.readthed
 
 > **Figure 6: Structure of data in phyloseq**
 
-> ![assembly graph](Img/phyloseq.png){: width="560px" width:"100%" .center}
+> ![assembly graph](Img/phyloseq.png){: width:"100%" .center}
 
 </br>
 
@@ -351,7 +351,7 @@ After sequencing, raw reads were processed using [zAMP](https://rsp4abm.readthed
 
 > **Figure 8: Comparison of microbiome composition between throat swabs and sputum**
 
-> ![assembly graph](Img/beta.png){: width="560px" width:"100%" .center}
+> ![assembly graph](Img/beta.png){: width:"100%" .center}
 
 </br>
 </br>
@@ -384,7 +384,7 @@ After sequencing, raw reads were processed using [zAMP](https://rsp4abm.readthed
 
 > **Figure 9: Comparison of microbiome composition between throat swabs and sputum in exacerbation phase**
 >
-> ![assembly graph](Img/exacerbation.png){: width="560px" width:"100%" .center}
+> ![assembly graph](Img/exacerbation.png){: width:"100%" .center}
 
 </br>
 </br>
@@ -404,7 +404,7 @@ Do sputum and throat swab samples cluster more strongly by sample type or patien
 
 > **Figure 10: Microbial community composition clusters by patient identity rather than sample type**
 >
-> ![assembly graph](Img/patient_signature.png){: width="560px" width:"100%" .center}
+> ![assembly graph](Img/patient_signature.png){: width:"100%" .center}
 
 </br>
 </br>
