@@ -397,7 +397,7 @@ Do sputum and throat swab samples cluster more strongly by sample type or patien
 </br>
 
 
-!!! question "**Question 4**"  
+!!! question "**Question 5**"  
     How efficient are throat swabs in detecting known pathogens in CF patients compared to sputum samples?
 
 ??? info "**Code**"
@@ -462,7 +462,7 @@ Do sputum and throat swab samples cluster more strongly by sample type or patien
 
       ```
 
-> **Figure 10: Validity of throat swabs for pathogen detection compared to sputum** > ![assembly graph](Img/pathogen.png){: width="560px" width:"100%" .center}
+> **Figure 11: Validity of throat swabs for pathogen detection compared to sputum** > ![assembly graph](Img/pathogen.png){: width="560px" width:"100%" .center}
 
 
 ??? info "**Answer**"
