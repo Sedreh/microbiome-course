@@ -8,8 +8,13 @@ The composition of our microbiome is not static; it is shaped by various interna
 
 Cystic fibrosis unfolds as a story of resilience against a genetic adversity, where the mutation in the CFTR gene ,that maintains the balance of salt and water across cell membranes,results in an overproduction of thick, sticky mucus that obstructs the lungs and obstruct the pancreas. For patients, this means a struggle to breathe and a battle against frequent lung infections.
 
-> **Figure 1: Mutations in the CFTR gene, thick and sticky mucus production**>![assembly graph](Img/Cystic_fibrosis.png){: width="560px" width:"100%" .center}
+</br>
 
+> **Figure 1: Mutations in the CFTR gene, thick and sticky mucus production**
+
+> ![assembly graph](Img/Cystic_fibrosis.png){: width="560px" width:"100%" .center}
+
+</br>
 
 ### **Role of the microbiota**
 
@@ -20,6 +25,7 @@ In CF lungs, the thick mucus provides an ideal environment for opportunistic bac
 
 The Climax-Attack Model (CAM) in CF explains the dynamic changes in airway microbiota.
 
+</br>
 
 > **Figure 2: Microbiome shifts in CF**
 
@@ -50,6 +56,7 @@ Evaluating non-invasive respiratory sampling methods for young children in medic
 
 _"Can throat swabs serve as an effective alternative to sputum for the longitudinal assessment of lung microbial diversity and pathogen identification in patients who cannot expectorate?"_
 
+</br>
 > ![assembly graph](Img/sputum_vs_throat.png){: width="560px" width:"100%" .center}
 
 </br>
@@ -64,12 +71,12 @@ _"Can throat swabs serve as an effective alternative to sputum for the longitudi
 ### **Study design**
 
 Traditional culture techniques have been the cornerstone of microbiological monitoring in cystic fibrosis (CF), but they come with certain limitations. Some bacteria are hard to culture, or they grow too slowly to be detected promptly, and cultures may miss many non-culturable or fastidious organisms. That's where 16S amplicon-based metagenomics adds significant value.
+</br>
 
 > **Figure 3: Study design and sample collection**
 
 > ![assembly graph](Img/design.png){: width="560px" width:"100%" .center}
 
-</br>
 </br>
 
 ## **Part 2:**
@@ -81,6 +88,8 @@ Amplicon-based metagenomics is a method focused on the amplification and sequenc
 Overall, the variable regions of the 16S rRNA gene present sufficient sequence diversity to differentiate between microbial Genera, and often even at the Species level. The selection of a reference database for taxonomical annotation significantly impacts the quality of the prediction and the taxonomical resolution.
 
 After sequencing, raw reads were processed using [zAMP](https://rsp4abm.readthedocs.io/en/latest/index.html), a [DADA2](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4927377/)-based bioinformatics pipeline.
+
+</br>
 
 > **Figure 4: 16S amplicon-based metagenomics workflow**
 
@@ -116,12 +125,12 @@ After sequencing, raw reads were processed using [zAMP](https://rsp4abm.readthed
       #Extract taxonomy table table from phyloseq object
       taxonomy_table <- data.frame(tax_table(phyloseq_pairs))
       ```
+</br>
 
 > **Figure 6: Structure of data in phyloseq**
 
 > ![assembly graph](Img/phyloseq.png){: width="560px" width:"100%" .center}
 
-</br>
 </br>
 
 ## **Part 3:**
@@ -208,6 +217,7 @@ After sequencing, raw reads were processed using [zAMP](https://rsp4abm.readthed
       Alpha_diversity(phyloseq_pairs, output_folder)
       ```
 
+</br>
 > **Figure 7: Microbiome diversity in throat swabs and sputum**
 
 > ![assembly graph](Img/Alpha_combined_plot_paired_fin.png){: width="560px" width:"100%" .center}
@@ -337,6 +347,7 @@ After sequencing, raw reads were processed using [zAMP](https://rsp4abm.readthed
     # Example of using the function
     Beta_diversity(phyloseq_pairs, output_folder, distance_methods)
     ```
+</br>
 
 > **Figure 8: Comparison of microbiome composition between throat swabs and sputum**
 
@@ -388,6 +399,8 @@ Do sputum and throat swab samples cluster more strongly by sample type or patien
 
 ??? info "**Answer**"
       Samples clustered by the individuals rather than by the sample type (pairwise PERMANOVA, p = 0.001). This suggests that each patient harbors a unique, individual-specific microbiota in their airways that is more consistent across different sample types (sputum vs. throat swab) than across individuals. This could reflect personal environmental exposure, genetic background, or medical treatment history.
+
+</br>
 
 > **Figure 10: Microbial community composition clusters by patient identity rather than sample type**
 >
@@ -461,7 +474,7 @@ Do sputum and throat swab samples cluster more strongly by sample type or patien
       ggsave(Pathogen_table, filename = "heatmap_patientvisit.jpeg", height=4, width=12, dpi = 300)
 
       ```
-
+</br>
 > **Figure 11: Validity of throat swabs for pathogen detection compared to sputum** > ![assembly graph](Img/pathogen.png){: width="560px" width:"100%" .center}
 
 
