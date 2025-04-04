@@ -50,6 +50,8 @@ Evaluating non-invasive respiratory sampling methods for young children in medic
 
 _"Can throat swabs serve as an effective alternative to sputum for the longitudinal assessment of lung microbial diversity and pathogen identification in patients who cannot expectorate?"_
 
+> ![assembly graph](Img/sputum_vs_throat.png){: width="560px" width:"100%" .center}
+
 </br>
 
 1. Is the bacterial diversity in throat swab samples similar to that in sputum samples?
