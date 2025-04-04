@@ -1,0 +1,1016 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.18">
+    
+    
+      
+        <title>MetaGenLab</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.66ac8b77.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="css/extra.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#practical-session-microbiome-analysis" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="MetaGenLab" class="md-header__button md-logo" aria-label="MetaGenLab" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            MetaGenLab
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Microbiota analysis
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="MetaGenLab" class="md-nav__button md-logo" aria-label="MetaGenLab" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    MetaGenLab
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Microbiota analysis
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Microbiota analysis
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#part-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part 1:
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Part 1:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduction-to-the-study" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction to the study
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#role-of-the-microbiota" class="md-nav__link">
+    <span class="md-ellipsis">
+      Role of the microbiota
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#surveillance-in-cf" class="md-nav__link">
+    <span class="md-ellipsis">
+      Surveillance in CF
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#problem-statement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problem Statement:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aim-of-the-study" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aim of the study
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#study-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      Study design
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part 2:
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Part 2:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      Methods
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part 3:
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Part 3:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Analysis
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#part-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part 1:
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Part 1:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduction-to-the-study" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction to the study
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#role-of-the-microbiota" class="md-nav__link">
+    <span class="md-ellipsis">
+      Role of the microbiota
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#surveillance-in-cf" class="md-nav__link">
+    <span class="md-ellipsis">
+      Surveillance in CF
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#problem-statement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problem Statement:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aim-of-the-study" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aim of the study
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#study-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      Study design
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part 2:
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Part 2:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      Methods
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part 3:
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Part 3:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Analysis
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="practical-session-microbiome-analysis"><strong>Practical Session: Microbiome Analysis</strong></h1>
+<h2 id="part-1"><strong>Part 1:</strong></h2>
+<h3 id="introduction-to-the-study"><strong>Introduction to the study</strong></h3>
+<p>The composition of our microbiome is not static; it is shaped by various internal and external factors throughout life, from birth to adulthood. Early influences include genetics, and even birth mode, which help establish a diverse microbiota. As we grow, factors such as diet, exercises continue to modify microbial communities. This study focuses on a life-limiting genetic disease typically diagnosed by age two.</p>
+<p>Cystic fibrosis unfolds as a story of resilience against a genetic adversity, where the mutation in the CFTR gene ,that maintains the balance of salt and water across cell membranes,results in an overproduction of thick, sticky mucus that obstructs the lungs and obstruct the pancreas. For patients, this means a struggle to breathe and a battle against frequent lung infections.</p>
+<p></br></p>
+<blockquote>
+<p><strong>Figure 1: Mutations in the CFTR gene, thick and sticky mucus production</strong></p>
+<p><img alt="assembly graph" class="center" src="Img/Cystic_fibrosis.png" width:_100_="width:&quot;100%&quot;" /></p>
+</blockquote>
+<p></br></p>
+<h3 id="role-of-the-microbiota"><strong>Role of the microbiota</strong></h3>
+<p>Tracking of the lower respiratory tract microbiota stands as a critical tool in this struggle, offering deep insights into the lung's microbial landscape. Because in CF, the diversity of the microbial community in the lungs can change significantly with different stages of the disease. Normally, a diverse microbiome in the lungs is associated with better respiratory health. Healthy lungs contain a diverse and balanced microbiota, mostly dominated by anaerobes and commensal bacteria such as Veillonella, and Prevotella and is like an island whose population is determined by balance of immigration and elimination of species. </p>
+<p>In CF lungs, the thick mucus provides an ideal environment for opportunistic bacteria and pathogens to colonize. As the disease progresses and repeated antibiotic treatments are administered, microbial diversity decreases. In the early stages, Staphylococcus aureus and Haemophilus species are commonly found, but later, colonization by Pseudomonas and the formation of a thick biofilm layer make sputum clearance and treatment significantly more difficult. </p>
+<p>The Climax-Attack Model (CAM) in CF explains the dynamic changes in airway microbiota.</p>
+<p></br></p>
+<blockquote>
+<p><strong>Figure 2: Microbiome shifts in CF</strong></p>
+<p><img alt="assembly graph" class="center" src="Img/CF_microbiota.png" width:_100_="width:&quot;100%&quot;" /></p>
+</blockquote>
+<p></br></p>
+<p>By understanding these microbial profiles and their shift in disease stages, physicians can customize treatments, adjusting antibiotics to stop infections from developing or spreading, keeping an eye on emerging drug resistances, and ultimately enhancing the quality of life for those with cystic fibrosis. </p>
+<p></br></p>
+<h3 id="surveillance-in-cf"><strong>Surveillance in CF</strong></h3>
+<ol>
+<li><strong>Cinical Monitoring:</strong> Regular clinic visits for physical examinations</li>
+<li><strong>Microbiological Monitoring:</strong> Regular collection of expectorated sputum and bronchoalveolar lavage (BAL) and analysing by microbial culture to identify bacteria or fungi that may be present in the lungs.</li>
+</ol>
+<p></br></p>
+<h3 id="problem-statement"><strong>Problem Statement:</strong></h3>
+<p><strong>It is relatively difficult to collect BAL and sputum in pediatric setting as children often do not have the ability to expectorate sputum because they either swallow it or do not understand how to cough it up effectively when requested.</strong></p>
+<p></br></p>
+<h3 id="aim-of-the-study"><strong>Aim of the study</strong></h3>
+<p>Evaluating non-invasive respiratory sampling methods for young children in medical settings</p>
+<p><em>"Can throat swabs serve as an effective alternative to sputum for the longitudinal assessment of lung microbial diversity and pathogen identification in patients who cannot expectorate?"</em></p>
+<p></br></p>
+<blockquote>
+<p><img alt="assembly graph" class="center" src="Img/sputum_vs_throat.png" width:_100_="width:&quot;100%&quot;" /></p>
+</blockquote>
+<p></br></p>
+<ol>
+<li>Is the bacterial diversity in throat swab samples similar to that in sputum samples?</li>
+<li>Is the bacterial composition of throat swabs similar to that of sputum samples?</li>
+<li>Can throat swabs detect microbial shifts associated with CF exacerbations as effectively as sputum samples?</li>
+<li>How efficient are throat swabs in detecting known pathogens in CF patients compared to sputum samples?</li>
+</ol>
+<p></br></p>
+<h3 id="study-design"><strong>Study design</strong></h3>
+<p>Traditional culture techniques have been the cornerstone of microbiological monitoring in cystic fibrosis (CF), but they come with certain limitations. Some bacteria are hard to culture, or they grow too slowly to be detected promptly, and cultures may miss many non-culturable or fastidious organisms. That's where 16S amplicon-based metagenomics adds significant value.
+</br></p>
+<blockquote>
+<p><strong>Figure 3: Study design and sample collection</strong></p>
+<p><img alt="assembly graph" class="center" src="Img/design.png" width:_100_="width:&quot;100%&quot;" /></p>
+</blockquote>
+<p></br></p>
+<h2 id="part-2"><strong>Part 2:</strong></h2>
+<h3 id="methods"><strong>Methods</strong></h3>
+<p>Amplicon-based metagenomics is a method focused on the amplification and sequencing of specific genomic regions, most often targeting the 16S rRNA genes that is ubiquitous in prokaryotes and hence allows to identify the members of a bacterial community. Each 16S rRNA gene has an approximate length of 1600 base pairs and includes nine hypervariable regions of varying conservation (V1-V9) interspersed by conserved sequences. Primers are designed on conserved sequences to allow the amplification of a maximum of bacterial and archaeal taxa, in our case on both side of the V3-V4 region. This strategy allows for short read sequencing of the amplicons and hence maximizes cost efficiency while minimizing technical challenges associated with amplification and analysis.</p>
+<p>Overall, the variable regions of the 16S rRNA gene present sufficient sequence diversity to differentiate between microbial Genera, and often even at the Species level. The selection of a reference database for taxonomical annotation significantly impacts the quality of the prediction and the taxonomical resolution.</p>
+<p>After sequencing, raw reads were processed using <a href="https://rsp4abm.readthedocs.io/en/latest/index.html">zAMP</a>, a <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4927377/">DADA2</a>-based bioinformatics pipeline.</p>
+<p></br></p>
+<blockquote>
+<p><strong>Figure 4: 16S amplicon-based metagenomics workflow</strong></p>
+<p><img alt="assembly graph" class="center" src="Img/methods1.png" width:_100_="width:&quot;100%&quot;" /></p>
+</blockquote>
+<p></br>
+</br></p>
+<blockquote>
+<p><strong>Figure 5: DADA2 workflow</strong></p>
+<p><img alt="assembly graph" class="center" src="Img/DADA21.png" width:_100_="width:&quot;100%&quot;" /></p>
+</blockquote>
+<p></br>
+</br></p>
+<details class="info">
+<summary><strong>Code</strong></summary>
+<div class="highlight"><pre><span></span><code><span class="c1"># Call phyloseq library</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">phyloseq</span><span class="p">)</span>
+<span class="c1">#Read phyloseq object from the folder</span>
+<span class="n">phyloseq</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">readRDS</span><span class="p">(</span><span class="s">&quot;/path_to_your_folder/base_with_tree.rds&quot;</span><span class="p">)</span>
+
+<span class="c1">#Subset only paired sputum and throat swab samples collected in the same day of the visit from phyloseq that contains samples of full cohort</span>
+<span class="n">phyloseq_pairs</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">prune_samples</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">phyloseq</span><span class="p">,</span><span class="w"> </span><span class="nf">as.character</span><span class="p">(</span><span class="n">metadata_pairs</span><span class="o">$</span><span class="n">Sample</span><span class="p">))</span>
+
+<span class="c1"># Remove taxa with 0 counts</span>
+<span class="n">phyloseq_pairs</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">prune_taxa</span><span class="p">(</span><span class="nf">taxa_sums</span><span class="p">(</span><span class="n">phyloseq_pairs</span><span class="p">)</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="n">phyloseq_pairs</span><span class="p">)</span>
+
+<span class="c1">#Extract bacterial abundance table from phyloseq object</span>
+<span class="n">Count_table</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">data.frame</span><span class="p">(</span><span class="nf">otu_table</span><span class="p">(</span><span class="n">phyloseq_pairs</span><span class="p">))</span>
+<span class="c1">#Extract metadata table from phyloseq object</span>
+<span class="n">metadata</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">data.frame</span><span class="p">(</span><span class="nf">sample_data</span><span class="p">(</span><span class="n">phyloseq_pairs</span><span class="p">))</span>
+<span class="c1">#Extract taxonomy table table from phyloseq object</span>
+<span class="n">taxonomy_table</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">data.frame</span><span class="p">(</span><span class="nf">tax_table</span><span class="p">(</span><span class="n">phyloseq_pairs</span><span class="p">))</span>
+</code></pre></div>
+</details>
+<p></br></p>
+<blockquote>
+<p><strong>Figure 6: Structure of data in phyloseq</strong></p>
+<p><img alt="assembly graph" class="center" src="Img/phyloseq.png" width:_100_="width:&quot;100%&quot;" /></p>
+</blockquote>
+<p></br></p>
+<h2 id="part-3"><strong>Part 3:</strong></h2>
+<h3 id="analysis"><strong>Analysis</strong></h3>
+<div class="admonition question">
+<p class="admonition-title"><strong>Question 1</strong></p>
+<p>Is the bacterial diversity in throat swab samples similar to that in sputum samples? Does this similarity changes by patient's exacerbation?</p>
+</div>
+<details class="info">
+<summary><strong>Code</strong></summary>
+<div class="highlight"><pre><span></span><code><span class="c1"># Call required libraries</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">tidyverse</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">knitr</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">stringr</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">readxl</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">gridExtra</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">dplyr</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">ggplot2</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">cowplot</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">vegan</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">RColorBrewer</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">microbiome</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">pairwiseAdonis</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">randomcoloR</span><span class="p">)</span>
+
+<span class="c1"># Function to process phyloseq and plot alpha diversity</span>
+<span class="n">Alpha_diversity</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">function</span><span class="p">(</span><span class="n">phyloseq</span><span class="p">,</span><span class="w"> </span><span class="n">output_folder</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+
+<span class="c1"># Calculate alpha diversity indices</span>
+<span class="n">tab</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">microbiome</span><span class="o">::</span><span class="nf">alpha</span><span class="p">(</span><span class="n">phyloseq</span><span class="p">,</span><span class="w"> </span><span class="n">index</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;all&quot;</span><span class="p">)</span>
+
+<span class="c1"># Add diversity indices to sample metadata</span>
+<span class="n">ps1_meta</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">sample_data</span><span class="p">(</span><span class="n">phyloseq</span><span class="p">)</span>
+<span class="n">ps1_meta</span><span class="o">$</span><span class="n">Shannon</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">tab</span><span class="o">$</span><span class="n">diversity_shannon</span>
+<span class="n">ps1_meta</span><span class="o">$</span><span class="n">chao1</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">tab</span><span class="o">$</span><span class="n">chao1</span>
+<span class="nf">sample_data</span><span class="p">(</span><span class="n">phyloseq</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">ps1_meta</span>
+
+<span class="c1"># Ensure Sample_type or your sample_group column in metadata is a factor and create color mapping</span>
+<span class="n">ps1_meta</span><span class="o">$</span><span class="n">Sample_type</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">factor</span><span class="p">(</span><span class="n">ps1_meta</span><span class="o">$</span><span class="n">Sample_type</span><span class="p">)</span>
+<span class="n">sample_types</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">levels</span><span class="p">(</span><span class="n">ps1_meta</span><span class="o">$</span><span class="n">Sample_type</span><span class="p">)</span>
+<span class="n">n_colors</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">length</span><span class="p">(</span><span class="n">sample_types</span><span class="p">)</span>
+<span class="n">colors</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">brewer.pal</span><span class="p">(</span><span class="nf">min</span><span class="p">(</span><span class="n">n_colors</span><span class="p">,</span><span class="w"> </span><span class="m">8</span><span class="p">),</span><span class="w"> </span><span class="s">&quot;Dark2&quot;</span><span class="p">)</span>
+<span class="c1"># Adjust palette based on number of groups that you have</span>
+<span class="nf">if </span><span class="p">(</span><span class="n">n_colors</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="m">8</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">  </span><span class="c1"># Cycle through colors if more than 8 groups</span>
+<span class="n">colors</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">rep</span><span class="p">(</span><span class="n">colors</span><span class="p">,</span><span class="w"> </span><span class="n">length.out</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">n_colors</span><span class="p">)</span>
+<span class="p">}</span>
+<span class="n">color_map</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">setNames</span><span class="p">(</span><span class="n">colors</span><span class="p">,</span><span class="w"> </span><span class="n">sample_types</span><span class="p">)</span>
+
+
+<span class="c1"># Create combinations for pairwise comparisons</span>
+<span class="n">bmi.pairs</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">combn</span><span class="p">(</span><span class="n">Sample_type</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="n">simplify</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span><span class="p">,</span><span class="w"> </span><span class="n">FUN</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">function</span><span class="p">(</span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="n">Sample_type</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+
+<span class="c1"># Plotting function</span>
+<span class="n">plot_alpha_diversity</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">function</span><span class="p">(</span><span class="n">index_name</span><span class="p">,</span><span class="w"> </span><span class="n">x_label</span><span class="p">,</span><span class="w"> </span><span class="n">y_label</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="n">microbiome</span><span class="o">::</span><span class="nf">boxplot_alpha</span><span class="p">(</span><span class="n">phyloseq</span><span class="p">,</span><span class="w"> </span><span class="n">index</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">index_name</span><span class="p">,</span><span class="w"> </span><span class="n">x_var</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Sample_type&quot;</span><span class="p">,</span>
+<span class="w">                          </span><span class="n">violin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span><span class="p">,</span><span class="w"> </span><span class="n">show.points</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">,</span><span class="w"> </span><span class="n">zeroes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">,</span>
+<span class="w">                          </span><span class="n">outlier.fill</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;white&quot;</span><span class="p">,</span>
+<span class="w">                          </span><span class="n">fill.colors</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">color_map</span><span class="p">)</span><span class="w"> </span><span class="o">+</span>
+<span class="nf">theme_minimal</span><span class="p">()</span><span class="w"> </span><span class="o">+</span>
+<span class="nf">labs</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">x_label</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">y_label</span><span class="p">)</span><span class="w"> </span><span class="o">+</span>
+<span class="nf">theme</span><span class="p">(</span><span class="n">axis.text</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">element_text</span><span class="p">(</span><span class="n">size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">12</span><span class="p">),</span>
+<span class="w">      </span><span class="n">axis.title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">element_text</span><span class="p">(</span><span class="n">size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">16</span><span class="p">),</span>
+<span class="w">      </span><span class="n">legend.position</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;top&quot;</span><span class="p">)</span><span class="w"> </span><span class="o">+</span>
+<span class="nf">ylim</span><span class="p">(</span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="kc">NA</span><span class="p">)</span><span class="w"> </span><span class="o">+</span>
+<span class="nf">stat_compare_means</span><span class="p">(</span><span class="n">comparisons</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">bmi.pairs</span><span class="p">,</span><span class="w"> </span><span class="n">paired</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">,</span><span class="w"> </span><span class="n">label</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;p.format&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">method</span><span class="w"> </span><span class="o">=</span><span class="w">   </span><span class="s">&quot;wilcox.test&quot;</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="c1"># Create plots</span>
+<span class="n">p1</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">plot_alpha_diversity</span><span class="p">(</span><span class="s">&quot;Chao1&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Observed&quot;</span><span class="p">)</span>
+<span class="n">p2</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">plot_alpha_diversity</span><span class="p">(</span><span class="s">&quot;shannon&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Shannon&quot;</span><span class="p">)</span>
+
+<span class="c1"># Combine and save plots</span>
+<span class="n">final_plot</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">gridExtra</span><span class="o">::</span><span class="nf">grid.arrange</span><span class="p">(</span><span class="n">p1</span><span class="p">,</span><span class="w"> </span><span class="n">p2</span><span class="p">,</span><span class="w"> </span><span class="n">ncol</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="p">)</span>
+<span class="n">output_filename</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">file.path</span><span class="p">(</span><span class="n">output_folder</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Alpha_diversity.svg&quot;</span><span class="p">)</span>
+<span class="nf">ggsave</span><span class="p">(</span><span class="n">output_filename</span><span class="p">,</span><span class="w"> </span><span class="n">final_plot</span><span class="p">,</span><span class="w"> </span><span class="n">device</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;svg&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">width</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">7</span><span class="p">,</span><span class="w"> </span><span class="n">height</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">8</span><span class="p">,</span><span class="w"> </span><span class="n">dpi</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">300</span><span class="p">)</span>
+<span class="p">}</span>
+
+
+<span class="c1">#Define output folder</span>
+<span class="n">output_folder</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="s">&quot;path_to_your_output_folder&quot;</span>
+
+<span class="c1"># Example of using the function</span>
+<span class="nf">Alpha_diversity</span><span class="p">(</span><span class="n">phyloseq_pairs</span><span class="p">,</span><span class="w"> </span><span class="n">output_folder</span><span class="p">)</span>
+</code></pre></div>
+</details>
+<p></br></p>
+<blockquote>
+<p><strong>Figure 7: Microbiome diversity in throat swabs and sputum</strong></p>
+<p><img alt="assembly graph" class="center" src="Img/Alpha_combined_plot_paired_fin.png" width="560px" width:_100_="width:&quot;100%&quot;" /></p>
+</blockquote>
+<p></br>
+</br></p>
+<details class="info">
+<summary><strong>Answer</strong></summary>
+<p><strong>Chao1 Diversity Index:</strong> For both pulmonary exacerbations and regular follow-up, the p-values (0.69 and 0.78, respectively) suggest that the difference in the number of observed species between sputum and throat swabs is not statistically significant. This means that the throat swabs have a similar species richness to that of sputum samples for the patient.
+</br>
+<strong>Shannon Diversity Index:</strong> Similarly, the p-values (1 and 0.25) indicate no statistically significant difference in the microbial diversity of sputum versus throat swabs during both pulmonary exacerbations and regular follow-up.</p>
+<p><strong>The clinical status during exacerbations, which is typically marked by increased symptoms and decreased lung function, does not seem to significantly affect the ability of throat swabs to capture microbial diversity.</strong></p>
+</details>
+<div class="admonition question">
+<p class="admonition-title"><strong>Question 2</strong></p>
+<p>Is the bacterial composition of throat swabs similar to that of sputum samples?</p>
+</div>
+<details class="info">
+<summary><strong>Code</strong></summary>
+<div class="highlight"><pre><span></span><code><span class="c1"># Function to process phyloseq and plot beta diversity (Bray-Curtis/ Jaccard distance)</span>
+<span class="n">Beta_diversity</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">function</span><span class="p">(</span><span class="n">phyloseq</span><span class="p">,</span><span class="w"> </span><span class="n">output_folder</span><span class="p">,</span><span class="w"> </span><span class="n">distance_methods</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+
+<span class="c1"># Aggregate to species level and normalize</span>
+<span class="n">phyloseq_species</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">aggregate_taxa</span><span class="p">(</span><span class="n">phyloseq</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Species&quot;</span><span class="p">)</span><span class="w"> </span><span class="o">%&gt;%</span>
+<span class="n">microbiome</span><span class="o">::</span><span class="nf">transform</span><span class="p">(</span><span class="s">&quot;compositional&quot;</span><span class="p">)</span>
+
+<span class="c1"># Remove taxa with 0 counts</span>
+<span class="n">phyloseq_species</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">prune_taxa</span><span class="p">(</span><span class="nf">taxa_sums</span><span class="p">(</span><span class="n">phyloseq_species</span><span class="p">)</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="n">phyloseq_species</span><span class="p">)</span>
+
+<span class="c1"># Extract count table for distance calculations</span>
+<span class="n">otu.tab</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">data.frame</span><span class="p">(</span><span class="nf">t</span><span class="p">(</span><span class="nf">otu_table</span><span class="p">(</span><span class="n">phyloseq_species</span><span class="p">)))</span>
+
+<span class="c1"># Extract top 10 taxa for plot</span>
+<span class="n">top10</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">microbiome</span><span class="o">::</span><span class="nf">top_taxa</span><span class="p">(</span><span class="n">phyloseq_species</span><span class="p">,</span><span class="w"> </span><span class="m">10</span><span class="p">)</span>
+<span class="n">physeq10.com</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">subset_taxa</span><span class="p">(</span><span class="n">phyloseq_species</span><span class="p">,</span><span class="w"> </span><span class="n">Species</span><span class="w"> </span><span class="o">%in%</span><span class="w"> </span><span class="n">top10</span><span class="p">)</span>
+<span class="n">physeq10.com</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">t</span><span class="p">(</span><span class="n">physeq10.com</span><span class="o">@</span><span class="n">otu_table</span><span class="p">)</span>
+<span class="c1">#Replace NAs in the count table with zeros to avoid calculation errors</span>
+<span class="n">physeq10.com</span><span class="p">[</span><span class="nf">is.na</span><span class="p">(</span><span class="n">physeq10.com</span><span class="p">)]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span>
+<span class="n">top10Species</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">colnames</span><span class="p">(</span><span class="n">physeq10.com</span><span class="p">)</span>
+
+<span class="n">plots</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">list</span><span class="p">()</span>
+<span class="nf">for </span><span class="p">(</span><span class="n">method</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">distance_methods</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="c1"># Calculate Jaccard and Bray-Curtis distances between samples</span>
+<span class="n">distance</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">vegdist</span><span class="p">(</span><span class="n">otu.tab</span><span class="p">,</span><span class="w"> </span><span class="n">method</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">ifelse</span><span class="p">(</span><span class="n">method</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s">&quot;jaccard&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;jaccard&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;bray&quot;</span><span class="p">),</span><span class="w"> </span><span class="n">binary</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">method</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s">&quot;jaccard&quot;</span><span class="p">))</span>
+<span class="c1">###If the method variable equals &quot;jaccard&quot;, then it uses &quot;jaccard&quot;; otherwise, it defaults to &quot;bray&quot;.</span>
+
+<span class="c1">#Set seed for reproducibility in NMDS</span>
+<span class="nf">set.seed</span><span class="p">(</span><span class="m">42</span><span class="p">)</span>
+
+<span class="c1"># NMDS ordination on the Jaccard and/or Bray-Curtis distance matrix</span>
+<span class="n">nmds_g</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">metaMDS</span><span class="p">(</span><span class="n">distance</span><span class="p">)</span>
+
+<span class="c1"># Extract NMDS scores for each sample and merge them with metadata</span>
+<span class="n">data.scores_g</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">as.data.frame</span><span class="p">(</span><span class="nf">scores</span><span class="p">(</span><span class="n">nmds_g</span><span class="p">,</span><span class="w"> </span><span class="n">display</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;sites&quot;</span><span class="p">))</span>
+<span class="c1">#Remove any rows with missing data to avoid errors in plotting</span>
+<span class="n">data.scores_g</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">na.omit</span><span class="p">(</span><span class="n">data.scores_g</span><span class="p">)</span>
+<span class="c1">#Extract metadata from the phyloseq object</span>
+<span class="n">meta_g</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">data.frame</span><span class="p">(</span><span class="nf">sample_data</span><span class="p">(</span><span class="n">phyloseq_P_species</span><span class="p">))</span>
+<span class="n">data.scores_g</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">merge</span><span class="p">(</span><span class="n">data.scores_g</span><span class="p">,</span><span class="w"> </span><span class="n">meta_g</span><span class="p">,</span><span class="w"> </span><span class="n">by</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="n">all</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">)</span>
+
+<span class="c1">#Clean up row names after merging</span>
+<span class="nf">row.names</span><span class="p">(</span><span class="n">data.scores_g</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">data.scores_g</span><span class="o">$</span><span class="n">Row.names</span>
+<span class="n">data.scores_g</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">data.scores_g</span><span class="p">[,</span><span class="w"> </span><span class="o">!</span><span class="p">(</span><span class="nf">names</span><span class="p">(</span><span class="n">data.scores_g</span><span class="p">)</span><span class="w"> </span><span class="o">%in%</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s">&quot;Row.names&quot;</span><span class="p">))]</span>
+
+<span class="c1"># Fit top species vectors to the NMDS</span>
+<span class="n">en_g</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">envfit</span><span class="p">(</span><span class="n">nmds_g</span><span class="p">,</span><span class="w"> </span><span class="n">physeq10.com</span><span class="p">,</span><span class="w"> </span><span class="n">permutations</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">999</span><span class="p">)</span>
+<span class="n">en_coord_cont_g</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">as.data.frame</span><span class="p">(</span><span class="nf">scores</span><span class="p">(</span><span class="n">en_g</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;vectors&quot;</span><span class="p">))</span>
+
+<span class="c1">#Calculate median coordinates of NMDS for each sample type to find the centroid</span>
+<span class="n">cent_g</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">aggregate</span><span class="p">(</span><span class="nf">cbind</span><span class="p">(</span><span class="n">NMDS1</span><span class="p">,</span><span class="w"> </span><span class="n">NMDS2</span><span class="p">)</span><span class="w"> </span><span class="o">~</span><span class="w"> </span><span class="n">Sample_type</span><span class="p">,</span><span class="w"> </span><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">data.scores_g</span><span class="p">,</span><span class="w"> </span><span class="n">FUN</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">median</span><span class="p">)</span>
+<span class="n">cent_g</span><span class="o">$</span><span class="n">Sample_type</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">factor</span><span class="p">(</span><span class="n">cent_g</span><span class="o">$</span><span class="n">Sample_type</span><span class="p">,</span><span class="w"> </span><span class="n">levels</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">names</span><span class="p">(</span><span class="n">colorCode</span><span class="p">))</span>
+
+<span class="c1">#Store the stress value of the NMDS for reporting</span>
+<span class="n">stress</span><span class="w"> </span><span class="o">&lt;-</span><span class="nf">round</span><span class="p">(</span><span class="n">nmds_g</span><span class="o">$</span><span class="n">stress</span><span class="p">,</span><span class="w"> </span><span class="n">digits</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">2</span><span class="p">)</span>
+
+<span class="c1">#Calculate the average age for each patient and merge with the main data frame</span>
+<span class="n">average_ages</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">aggregate</span><span class="p">(</span><span class="n">Age</span><span class="w"> </span><span class="o">~</span><span class="w"> </span><span class="n">patient</span><span class="p">,</span><span class="w"> </span><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">data.scores_g</span><span class="p">,</span><span class="w"> </span><span class="n">FUN</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">mean</span><span class="p">)</span>
+<span class="n">data.scores_g</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">merge</span><span class="p">(</span><span class="n">data.scores_g</span><span class="p">,</span><span class="w"> </span><span class="n">average_ages</span><span class="p">,</span><span class="w"> </span><span class="n">by</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;patient&quot;</span><span class="p">)</span>
+<span class="c1">#Round the average age values to a whole number</span>
+<span class="n">data.scores_g</span><span class="o">$</span><span class="n">Age.y</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">round</span><span class="p">(</span><span class="n">data.scores_g</span><span class="o">$</span><span class="n">Age.y</span><span class="p">)</span>
+<span class="c1"># Define color code based on sample groups dynamically</span>
+<span class="n">sample_types</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">levels</span><span class="p">(</span><span class="nf">factor</span><span class="p">(</span><span class="n">data.scores_g</span><span class="o">$</span><span class="n">Sample_type</span><span class="p">))</span>
+<span class="n">colors</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">brewer.pal</span><span class="p">(</span><span class="nf">min</span><span class="p">(</span><span class="nf">length</span><span class="p">(</span><span class="n">sample_types</span><span class="p">),</span><span class="w"> </span><span class="m">8</span><span class="p">),</span><span class="w"> </span><span class="s">&quot;Dark2&quot;</span><span class="p">)</span>
+<span class="nf">if </span><span class="p">(</span><span class="nf">length</span><span class="p">(</span><span class="n">sample_types</span><span class="p">)</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="m">8</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="n">colors</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">rep</span><span class="p">(</span><span class="n">colors</span><span class="p">,</span><span class="w"> </span><span class="n">length.out</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">length</span><span class="p">(</span><span class="n">sample_types</span><span class="p">))</span>
+<span class="p">}</span>
+<span class="n">colorCode</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">setNames</span><span class="p">(</span><span class="n">colors</span><span class="p">,</span><span class="w"> </span><span class="n">sample_types</span><span class="p">)</span>
+
+<span class="c1"># Plotting NMDS with ggplot2</span>
+<span class="n">NMDS_plot</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">ggplot</span><span class="p">(</span><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">data.scores_g</span><span class="p">,</span><span class="w"> </span><span class="nf">aes</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">NMDS1</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">NMDS2</span><span class="p">,</span><span class="w"> </span><span class="n">colour</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Sample_type</span><span class="p">))</span><span class="w"> </span><span class="o">+</span>
+<span class="nf">geom_point</span><span class="p">(</span><span class="nf">aes</span><span class="p">(</span><span class="n">shape</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Sample_type</span><span class="p">,</span><span class="w"> </span><span class="n">size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Age.y</span><span class="p">),</span><span class="w"> </span><span class="n">alpha</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.7</span><span class="p">)</span><span class="o">+</span><span class="w">  </span><span class="c1">#Plot points with size mapped to average age</span>
+<span class="nf">geom_vline</span><span class="p">(</span><span class="n">xintercept</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">0</span><span class="p">),</span><span class="w"> </span><span class="n">color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;grey70&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">linetype</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;longdash&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">size</span><span class="w"> </span><span class="o">=</span><span class="m">0.3</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="c1">#Add vertical line at x=0 for reference</span>
+<span class="nf">geom_hline</span><span class="p">(</span><span class="n">yintercept</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">0</span><span class="p">),</span><span class="w"> </span><span class="n">color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;grey70&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">linetype</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;longdash&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">size</span><span class="w"> </span><span class="o">=</span><span class="m">0.3</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="c1">#Add horizontal line at y=0 for reference</span>
+<span class="nf">geom_point</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">cent_g</span><span class="p">,</span><span class="w"> </span><span class="nf">aes</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">NMDS1</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">NMDS2</span><span class="p">,</span><span class="w"> </span><span class="n">colour</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Sample_type</span><span class="p">),</span><span class="w"> </span><span class="n">shape</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">16</span><span class="p">,</span><span class="w"> </span><span class="n">size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">4</span><span class="p">,</span><span class="w"> </span><span class="n">alpha</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.5</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="c1">#Plot centroids for sample types</span>
+<span class="nf">scale_color_manual</span><span class="p">(</span><span class="n">values</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">colorCode</span><span class="p">)</span><span class="o">+</span><span class="w">  </span><span class="c1">#Set custom colors for sample type</span>
+<span class="nf">scale_size_continuous</span><span class="p">(</span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Average Age&quot;</span><span class="p">)</span><span class="o">+</span><span class="w">  </span><span class="c1">#Add a legend for point sizes (average age)</span>
+<span class="nf">stat_ellipse</span><span class="p">(</span><span class="n">geom</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;polygon&quot;</span><span class="p">,</span><span class="nf">aes</span><span class="p">(</span><span class="n">fill</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Sample_type</span><span class="p">),</span><span class="w"> </span><span class="n">alpha</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.15</span><span class="p">,</span><span class="w"> </span><span class="n">linetype</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">2</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="c1">#Add ellipses to group samples by type</span>
+<span class="nf">geom_segment</span><span class="p">(</span><span class="nf">aes</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="n">xend</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">NMDS1</span><span class="o">*</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="n">yend</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">NMDS2</span><span class="o">*</span><span class="m">1</span><span class="p">),</span><span class="w"> </span><span class="n">arrow</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">arrow</span><span class="p">(</span><span class="n">length</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">unit</span><span class="p">(</span><span class="m">0.1</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;cm&quot;</span><span class="p">)),</span>
+<span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">en_coord_cont_g</span><span class="p">,</span><span class="w"> </span><span class="n">size</span><span class="w"> </span><span class="o">=</span><span class="m">0.2</span><span class="p">,</span><span class="w"> </span><span class="n">alpha</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.5</span><span class="p">,</span><span class="w"> </span><span class="n">colour</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;black&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">linetype</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">2</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="c1">#Draw vectors for species</span>
+<span class="nf">geom_text_repel</span><span class="p">(</span><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">en_coord_cont_g</span><span class="p">,</span><span class="w"> </span><span class="nf">aes</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">NMDS1</span><span class="o">*</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">NMDS2</span><span class="o">*</span><span class="m">1</span><span class="p">),</span><span class="w">  </span><span class="c1">#Add species names with labels</span>
+<span class="n">colour</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;black&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">fontface</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;bold&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">label</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">row.names</span><span class="p">(</span><span class="n">en_coord_cont_g</span><span class="p">),</span><span class="w"> </span><span class="n">size</span><span class="o">=</span><span class="m">3</span><span class="p">)</span><span class="o">+</span>
+<span class="nf">scale_fill_manual</span><span class="p">(</span><span class="n">values</span><span class="o">=</span><span class="n">colorCode</span><span class="p">)</span><span class="o">+</span>
+<span class="nf">theme</span><span class="p">(</span><span class="n">plot.title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">element_text</span><span class="p">(</span><span class="n">size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">9</span><span class="p">),</span>
+<span class="n">plot.subtitle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">element_text</span><span class="p">(</span><span class="n">size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">9</span><span class="p">))</span><span class="o">+</span>
+<span class="nf">geom_point</span><span class="p">(</span><span class="n">alpha</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.7</span><span class="p">)</span><span class="w"> </span><span class="o">+</span>
+<span class="nf">scale_color_manual</span><span class="p">(</span><span class="n">values</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">colorCode</span><span class="p">)</span><span class="w"> </span><span class="o">+</span>
+<span class="nf">theme_bw</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="c1">#Apply a theme with a white background</span>
+<span class="nf">labs</span><span class="p">(</span><span class="n">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;NMDS using &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">method</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; distance&quot;</span><span class="p">)</span>
+
+<span class="c1"># Save the plot</span>
+<span class="n">output_filename</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">file.path</span><span class="p">(</span><span class="n">output_folder</span><span class="p">,</span><span class="w"> </span><span class="nf">paste</span><span class="p">(</span><span class="s">&quot;NMDS_&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">method</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;_Plot.svg&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">sep</span><span class="o">=</span><span class="s">&quot;&quot;</span><span class="p">))</span>
+<span class="nf">ggsave</span><span class="p">(</span><span class="n">output_filename</span><span class="p">,</span><span class="w"> </span><span class="n">NMDS_plot</span><span class="p">,</span><span class="w"> </span><span class="n">device</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;svg&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">width</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">10</span><span class="p">)</span>
+<span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1"># Read phyloseq object from the path</span>
+<span class="n">phyloseq</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">readRDS</span><span class="p">(</span><span class="s">&quot;path_to_your_folder/base_with_tree.rds&quot;</span><span class="p">)</span>
+
+<span class="c1">#Define output folder</span>
+<span class="n">output_folder</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="s">&quot;path_to_your_output_folder&quot;</span>
+
+<span class="n">distance_methods</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s">&quot;bray&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;jaccard&quot;</span><span class="p">)</span>
+
+<span class="c1"># Example of using the function</span>
+<span class="nf">Beta_diversity</span><span class="p">(</span><span class="n">phyloseq_pairs</span><span class="p">,</span><span class="w"> </span><span class="n">output_folder</span><span class="p">,</span><span class="w"> </span><span class="n">distance_methods</span><span class="p">)</span>
+</code></pre></div>
+</details>
+<p></br></p>
+<blockquote>
+<p><strong>Figure 8: Comparison of microbiome composition between throat swabs and sputum</strong></p>
+<p><img alt="assembly graph" class="center" src="Img/beta.png" width:_100_="width:&quot;100%&quot;" /></p>
+</blockquote>
+<p></br>
+</br></p>
+<details class="info">
+<summary><strong>Answer</strong></summary>
+<p>Based on the provided Non-metric Multidimensional Scaling (NMDS) plots which compare beta diversity of microbial communities from sputum and throat swab samples using Bray-Curtis and Jaccard distances, here’s an interpretation:</p>
+<p><strong>NMDS Plot with Bray-Curtis- abundance of bacteria (Left side):</strong></p>
+<ul>
+<li>Stress: 0.22 (Acceptable: &lt; 0.2 is ideal, but &lt; 0.3 is considered a good representation of data in ecological studies).</li>
+<li>PERMANOVA: 0.001 (The low p-value indicates that there are significant differences in microbial composition between sputum and throat swab samples).</li>
+<li>The ellipses that represent the 95% confidence areas for the sputum (green) and throat swabs (orange) are somewhat overlapping, yet distinct, which suggests there is some similarity but also notable differences in microbial composition between the two sample types.</li>
+</ul>
+<p><strong>NMDS Plot with Jaccard distance- presecne/absence of bacteria (right side):</strong></p>
+<ul>
+<li>Stress: 0.15 (Considered a good representation).</li>
+<li>PERMANOVA: 0.54 (The high p-value suggests there is no significant difference in community membership - simply which organisms are present or absent, not their abundances - between the two sample types).</li>
+<li>The ellipses overlap more here compared to the Bray-Curtis plot, indicating a greater similarity in presence/absence data of the species sampled in throat swabs and sputum.</li>
+</ul>
+<p>The significant result in the Bray-Curtis NMDS indicates differences in the abundance of species, while the non-significant Jaccard result suggests that the same species are present in both sample types.
+  These findings could imply that while the types of bacteria present in throat swabs and sputum are similar (species membership), the proportions (abundance) of these bacteria differ, which is clinically relevant as abundance can influence disease state and treatment response.</p>
+</details>
+<div class="admonition question">
+<p class="admonition-title"><strong>Bonus question</strong></p>
+<p>How does the age of a patient appear to influence the microbial community composition in the respiratory tract, based on the beta diversity shown in the NMDS plots for both sputum and throat swab samples?</p>
+</div>
+<div class="admonition question">
+<p class="admonition-title"><strong>Question 3</strong></p>
+<p>Can throat swabs detect microbial shifts associated with CF exacerbations as effectively as sputum samples?</p>
+</div>
+<blockquote>
+<p><strong>Figure 9: Comparison of microbiome composition between throat swabs and sputum in exacerbation phase</strong></p>
+<p><img alt="assembly graph" class="center" src="Img/exacerbation.png" width:_100_="width:&quot;100%&quot;" /></p>
+</blockquote>
+<p></br>
+</br></p>
+<details class="info">
+<summary><strong>Answer</strong></summary>
+<p>The statistical test suggests that in the exacerbation phase, the sample type (sputum vs. throat swab) does not significantly affect the microbial composition within the same visits, with p-values of 0.12 and 0.58 for Bray-Curtis and Jaccard distances respectively. However, the timing of the visit influences bacterial abundance, as indicated by the significant p-value of 0.04 for Bray-Curtis distance, suggesting that factors related to individual visits (such as disease state, treatment, or environmental conditions) may play a more significant role than the type of sample collected. let's discover this in next question.</p>
+</details>
+<div class="admonition question">
+<p class="admonition-title"><strong>Question 4</strong></p>
+</div>
+<p>Do sputum and throat swab samples cluster more strongly by sample type or patient identity? What might this indicate about the nature of airway microbiota in children with CF?</p>
+<details class="info">
+<summary><strong>Answer</strong></summary>
+<p>Samples clustered by the individuals rather than by the sample type (pairwise PERMANOVA, p = 0.001). This suggests that each patient harbors a unique, individual-specific microbiota in their airways that is more consistent across different sample types (sputum vs. throat swab) than across individuals. This could reflect personal environmental exposure, genetic background, or medical treatment history.</p>
+</details>
+<p></br></p>
+<blockquote>
+<p><strong>Figure 10: Microbial community composition clusters by patient identity rather than sample type</strong></p>
+<p><img alt="assembly graph" class="center" src="Img/patient_signature.png" width:_100_="width:&quot;100%&quot;" /></p>
+</blockquote>
+<p></br>
+</br></p>
+<div class="admonition question">
+<p class="admonition-title"><strong>Question 5</strong></p>
+<p>How efficient are throat swabs in detecting known pathogens in CF patients compared to sputum samples?</p>
+</div>
+<details class="info">
+<summary><strong>Code</strong></summary>
+<div class="highlight"><pre><span></span><code><span class="c1">#Code for looking into the abundance of pathogen of interest in each sample group</span>
+<span class="c1"># 1) Read phyloseq object in R</span>
+<span class="c1"># 2) Transform it to phyloseq with relative abundances</span>
+<span class="c1"># 3) subset your pathogen of interest (you can use subset_taxa() function)</span>
+<span class="c1"># 4) Use aggregate_taxa() to have phyloseq with species level</span>
+
+<span class="c1"># list of pathogen of interest:</span>
+<span class="c1"># - Pseudomonas aeruginosa</span>
+<span class="c1"># - Staphylococcus aureus</span>
+<span class="c1"># - Achromobacter_sp</span>
+<span class="c1"># - Haemophilus influenzae</span>
+<span class="c1"># - Moraxella nonliquefaciens</span>
+<span class="c1"># - Stenotrophomonas_sp</span>
+
+<span class="c1"># phyloseq_species was normalised to relative abundances and aggregated to species level</span>
+<span class="n">ps_pathogen</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">subset_taxa</span><span class="p">(</span><span class="n">phyloseq_species</span><span class="p">,</span><span class="w"> </span><span class="n">Species</span><span class="w"> </span><span class="o">%in%</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s">&quot;Pseudomonas aeruginosa&quot;</span><span class="p">,</span>
+<span class="w">                          </span><span class="s">&quot;Staphylococcus aureus&quot;</span><span class="p">,</span>
+<span class="w">                          </span><span class="s">&quot;Achromobacter_sp&quot;</span><span class="p">,</span>
+<span class="w">                          </span><span class="s">&quot;Haemophilus influenzae&quot;</span><span class="p">,</span>
+<span class="w">                          </span><span class="s">&quot;Moraxella nonliquefaciens&quot;</span><span class="p">,</span>
+<span class="w">                          </span><span class="s">&quot;Stenotrophomonas_sp&quot;</span><span class="p">))</span>
+
+<span class="c1">#melt the phyloseq object</span>
+<span class="n">PS_abund_melt</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">psmelt</span><span class="p">(</span><span class="n">ps_pathogen</span><span class="p">)</span>
+
+<span class="c1">#now sum up all ASVs from same sequencing run that assigned to the same species</span>
+<span class="nf">colnames</span><span class="p">(</span><span class="n">PS_abund_melt</span><span class="p">)</span>
+
+<span class="n">PS_SumASV</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">PS_abund_melt</span><span class="w"> </span><span class="o">%&gt;%</span>
+<span class="w">            </span><span class="nf">group_by</span><span class="p">(</span><span class="n">Sample</span><span class="p">,</span><span class="w"> </span><span class="n">sample_types</span><span class="p">,</span><span class="w"> </span><span class="n">patient</span><span class="p">,</span><span class="w"> </span><span class="n">visit</span><span class="p">,</span><span class="w"> </span><span class="n">patient_visit</span><span class="p">,</span><span class="w"> </span><span class="n">Species</span><span class="p">)</span><span class="w"> </span><span class="o">%&gt;%</span>
+<span class="w">            </span><span class="nf">summarise_at</span><span class="p">(</span><span class="nf">vars</span><span class="p">(</span><span class="n">Abundance</span><span class="p">),</span><span class="w">  </span><span class="c1"># Specify column</span>
+<span class="w">            </span><span class="nf">list</span><span class="p">(</span><span class="n">Abundance_sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sum</span><span class="p">))</span>
+
+<span class="c1">#final table to use with pathogens of interest</span>
+<span class="n">Final_table</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">PS_SumASV</span><span class="p">[</span><span class="n">PS_SumASV</span><span class="o">$</span><span class="n">Species</span><span class="w"> </span><span class="o">%in%</span><span class="w"> </span><span class="nf">c </span><span class="p">(</span><span class="s">&quot;Pseudomonas aeruginosa&quot;</span><span class="p">,</span>
+<span class="w">                                                            </span><span class="s">&quot;Staphylococcus aureus&quot;</span><span class="p">,</span>
+<span class="w">                                                            </span><span class="s">&quot;Achromobacter_sp&quot;</span><span class="p">,</span>
+<span class="w">                                                            </span><span class="s">&quot;Haemophilus influenzae&quot;</span><span class="p">,</span>
+<span class="w">                                                            </span><span class="s">&quot;Moraxella nonliquefaciens&quot;</span><span class="p">,</span>
+<span class="w">                                                            </span><span class="s">&quot;Stenotrophomonas_sp&quot;</span><span class="p">),</span><span class="w"> </span><span class="p">]</span>
+<span class="nf">table</span><span class="p">(</span><span class="n">Final_table</span><span class="o">$</span><span class="n">Species</span><span class="p">,</span><span class="w"> </span><span class="n">Final_table</span><span class="o">$</span><span class="n">patient_visit</span><span class="p">)</span>
+
+<span class="c1">## plot Heatmaps</span>
+
+<span class="n">Pathogen_table</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">ggplot</span><span class="p">(</span><span class="n">Final_table</span><span class="p">,</span><span class="w"> </span><span class="nf">aes</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="w"> </span><span class="n">sample_types</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="o">=</span><span class="w"> </span><span class="n">Species</span><span class="p">,</span><span class="w"> </span><span class="n">fill</span><span class="o">=</span><span class="w"> </span><span class="n">Abundance_sum</span><span class="p">))</span><span class="w"> </span><span class="o">+</span>
+<span class="w">  </span><span class="nf">geom_tile</span><span class="p">()</span><span class="w"> </span><span class="o">+</span>
+<span class="w">  </span><span class="nf">facet_grid</span><span class="p">(</span><span class="o">~</span><span class="w"> </span><span class="n">patient_visit</span><span class="p">)</span><span class="w"> </span><span class="o">+</span>
+<span class="w">  </span><span class="nf">scale_fill_viridis</span><span class="p">(</span><span class="n">discrete</span><span class="o">=</span><span class="kc">FALSE</span><span class="p">,</span><span class="w"> </span><span class="n">name</span><span class="o">=</span><span class="s">&quot;Abundance (%)&quot;</span><span class="p">)</span><span class="w"> </span><span class="o">+</span>
+<span class="w">  </span><span class="nf">xlab</span><span class="p">(</span><span class="n">label</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Sample&quot;</span><span class="p">)</span><span class="o">+</span>
+<span class="w">  </span><span class="nf">theme</span><span class="p">(</span><span class="n">axis.text.x</span><span class="o">=</span><span class="nf">element_text</span><span class="p">(</span><span class="n">angle</span><span class="o">=</span><span class="m">90</span><span class="p">,</span><span class="w"> </span><span class="n">hjust</span><span class="o">=</span><span class="m">1</span><span class="p">),</span>
+<span class="w">        </span><span class="n">strip.text.x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">element_text</span><span class="p">(</span><span class="n">angle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">90</span><span class="p">,</span><span class="w"> </span><span class="n">hjust</span><span class="o">=</span><span class="m">1</span><span class="p">))</span><span class="w"> </span><span class="o">+</span>
+<span class="w">  </span><span class="nf">coord_equal</span><span class="p">()</span>
+
+<span class="nf">ggsave</span><span class="p">(</span><span class="n">Pathogen_table</span><span class="p">,</span><span class="w"> </span><span class="n">filename</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;heatmap_patientvisit.jpeg&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">height</span><span class="o">=</span><span class="m">4</span><span class="p">,</span><span class="w"> </span><span class="n">width</span><span class="o">=</span><span class="m">12</span><span class="p">,</span><span class="w"> </span><span class="n">dpi</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">300</span><span class="p">)</span>
+</code></pre></div>
+</details>
+<p></br></p>
+<blockquote>
+<p><strong>Figure 11: Validity of throat swabs for pathogen detection compared to sputum</strong> &gt; <img alt="assembly graph" class="center" src="Img/pathogen.png" width="560px" width:_100_="width:&quot;100%&quot;" /></p>
+</blockquote>
+<details class="info">
+<summary><strong>Answer</strong></summary>
+<p><strong>Pathogen presence:</strong> For each pathogen listed on the y-axis, you can see whether it was detected (green) or not detected (white) in each type of sample during various patient visits (shown on the x-axis).</p>
+<p><strong>Sample comparison:</strong> By comparing the green bars for each pathogen in sputum versus throat swabs across patient visits, you can assess whether throat swabs consistently show the presence of these pathogens as often as sputum samples do.</p>
+<p><strong>Detection consistency:</strong> Consistent detection in both sample types across multiple patient visits would suggest throat swabs are as efficient as sputum samples in detecting these pathogens. Conversely, if certain pathogens are frequently present in sputum samples but not in throat swabs, it could indicate that throat swabs may miss some pathogens that are detectable in sputum.</p>
+<p><strong>Pathogen-specific efficiency:</strong> The efficiency of throat swabs may vary for different pathogens. For example, if Staphylococcus aureus is consistently detected in both sputum and throat swabs, but Pseudomonas aeruginosa is often missed in throat swabs, this would indicate pathogen-specific differences in detection efficiency.</p>
+</details>
+<p><strong>How you would conclude?</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="assets/javascripts/bundle.3220b9d7.min.js"></script>
+      
+    
+  </body>
+</html>
