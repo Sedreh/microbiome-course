@@ -77,6 +77,7 @@ Traditional culture techniques have been the cornerstone of microbiological moni
 ### **Methods**
 
 Amplicon-based metagenomics is a method focused on the amplification and sequencing of specific genomic regions, most often targeting the 16S rRNA genes that is ubiquitous in prokaryotes and hence allows to identify the members of a bacterial community. Each 16S rRNA gene has an approximate length of 1600 base pairs and includes nine hypervariable regions of varying conservation (V1-V9) interspersed by conserved sequences. Primers are designed on conserved sequences to allow the amplification of a maximum of bacterial and archaeal taxa, in our case on both side of the V3-V4 region. This strategy allows for short read sequencing of the amplicons and hence maximizes cost efficiency while minimizing technical challenges associated with amplification and analysis.
+
 Overall, the variable regions of the 16S rRNA gene present sufficient sequence diversity to differentiate between microbial Genera, and often even at the Species level. The selection of a reference database for taxonomical annotation significantly impacts the quality of the prediction and the taxonomical resolution.
 
 After sequencing, raw reads were processed using [zAMP](https://rsp4abm.readthedocs.io/en/latest/index.html), a [DADA2](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4927377/)-based bioinformatics pipeline.
